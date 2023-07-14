@@ -11,3 +11,5 @@ alert(message);
 
 const messageToMyfriend = "Your name is vanya"
 alert(messageToMyfriend);
+
+// Завдання 4 ^

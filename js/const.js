@@ -39,3 +39,6 @@ console.log (findANewStar);
 let lastletmessage = 1234509876
 
 console.log (lastletmessage);
+// 5 let messages
+
+// Завдання 2 ^

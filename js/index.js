@@ -10,5 +10,8 @@ const nameoftheuser = true;
 
 console.log(typeof nameoftheuser);
 
-const Name = prompt("Please enter your name");
-console.log(Name);
+// Завдання 1 ^
+// Завдання 3 v
+
+const nameOfTheUser = confirm("Please enter your name");
+console.log(nameOfTheUser);
