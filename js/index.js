@@ -25,3 +25,5 @@ const SAVED_PASSWORD = 1924235
 const isMatch = SAVED_PASSWORD === password;
 
 console.log (isMatch);
+
+// Завдання 3 ^
