@@ -1,17 +1,27 @@
-const nameOfTheMonth = 'Привіт';
+const pricePerItem = 3500;
 
-console.log(typeof nameOfTheMonth);
+const orderedQuantity = 4;
 
-const nameoftheyear = 123;
+const totalPrice = pricePerItem * orderedQuantity;
 
-console.log(typeof nameoftheyear);
-
-const nameoftheuser = true;
-
-console.log(typeof nameoftheuser);
+console.log (totalPrice);
 
 // Завдання 1 ^
+
+// Завдання 2 v
+
+let age = 19
+
+const passed = age > 18
+
+console.log (passed);
+
 // Завдання 3 v
 
-const nameOfTheUser = confirm("Please enter your name");
-console.log(nameOfTheUser);
+let password = 194285
+
+const SAVED_PASSWORD = 1924235
+
+const isMatch = SAVED_PASSWORD === password;
+
+console.log (isMatch);
