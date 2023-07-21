@@ -27,3 +27,29 @@ const isMatch = SAVED_PASSWORD === password;
 console.log (isMatch);
 
 // Завдання 3 ^
+// Завдання 4 v
+let a = 5;
+
+a = a + 2;
+
+console.log (a);
+
+let b = 10;
+
+b = b - 4;
+
+console.log (b);
+
+let c = 15;
+
+c = c * 3;
+
+console.log (c);
+
+let d = 20;
+
+d = d / 10;
+
+console.log (d);
+
+// Завдання 4 ^
