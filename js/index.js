@@ -45,11 +45,3 @@ let c = 15;
 c *= 3;
 
 console.log (c);
-
-let d = 20;
-
-d /= 10;
-
-console.log (d);
-
-// Завдання 4 ^
