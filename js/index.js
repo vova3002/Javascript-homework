@@ -1,5 +1,3 @@
-const k1 = "5px";
-
 console.log (Number.parseInt(k1));
 
 const k2 = "12djd334";
