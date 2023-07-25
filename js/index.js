@@ -1,156 +1,66 @@
+console.log (Number.parseInt(k1));
 
-const str = 'Привіт';
+const k2 = "12djd334";
 
-console.log(typeof str);
+console.log (Number.parseInt(k2))
 
-const num = 123;
+const k3 = "12.45asdwe12";
 
-console.log(typeof num);
+console.log (Number.parseInt(k3));
 
-const flag = true;
+const k4 = "qwqweeewq";
 
-console.log(typeof flag);
-
-const txt = "true";
-
-console.log (typeof txt);
+console.log (Number.parseInt(k4));
 
 // Завдання 1 ^
-
 // Завдання 2 v
-const userOfThisProgram = 'Hello!'
 
-console.log (userOfThisProgram);
+const к1 = "5px";
 
-const userOfTheTitle = 'This message is to console!'.length;
+console.log (Number.parseFloat(к1));
 
-console.log (userOfTheTitle);
+const к2 = "12djd334";
 
-const newStuff = 'thats crazy'
+console.log (Number.parseFloat(к2));
 
-console.log (newStuff);
+const к3 = "12.45asdwe12";
 
-const nameofthisclass = 'what kind of class?'
+console.log (Number.parseFloat(к3));
 
-console.log (nameofthisclass);
+const к4 = "qwqweeewq";
 
-const thisMessageIsCrazy = 'for real?'
-
-console.log (thisMessageIsCrazy);
-
-// 5 const messages
-
-let aMessage = 'hi'
-
-console.log (typeof aMessage);
-
-let newToothpaste = 'coolgate'.length
-
-console.log (newToothpaste);
-
-let goIteensnewproject = true
-
-console.log (goIteensnewproject);
-
-let findANewStar = 459234
-
-console.log (findANewStar);
-
-let lastletmessage = 1234509876
-
-console.log (lastletmessage);
-// 5 let messages
+console.log (Number.parseFloat(к4));
 
 // Завдання 2 ^
-
 // Завдання 3 v
 
-const nameOfTheUser = prompt("Please enter your name");
-console.log(nameOfTheUser);
+console.log (Math.max(2, 34, 99, 3, 22, 36, 733, 18));
+
+console.log (Math.min(2, 34, 99, 3, 22, 36, 733, 18));
 
 // Завдання 3 ^
-
 // Завдання 4 v
-let age = 13
 
-let agefriend = 12;
+const a = 3;
 
-// console.log (agefriend + age);
-
-alert(age + agefriend);
+console.log(Math.random(a) * (19 - 1) + 1);
 
 // Завдання 4 ^
-
 // Завдання 5 v
-let group = "Я навчаюся в GoITeens в групі:"
 
-let goiteens = "FE 1y_5"
+const c = 4;
 
-console.log (group, goiteens);
+console.log (Math.sqrt(c));
 
 // Завдання 5 ^
+// Завдання 6 v
 
-// Extra task 1 v
+const string1 = "12px";
 
-let name = "MacBook Pro 13";
+console.log (Number.parseInt(string1));
 
-let price = 10000;
+const number1 = 14;
 
-console.log ('Обрано', name, 'ціна за штуку', price, 'кредитів');
+console.log (String(number1));
 
-// Extra task 1 ^
-const pricePerItem = 3500;
-
-const orderedQuantity = 4;
-
-const totalPrice = pricePerItem * orderedQuantity;
-
-console.log (totalPrice);
-
-// Завдання 1 ^
-
-// Завдання 2 v
-
-let age = 19
-
-const passed = age > 18
-
-console.log (passed);
-
-// Завдання 3 v
-
-let password = 194285
-
-const SAVED_PASSWORD = 1924235
-
-const isMatch = SAVED_PASSWORD === password;
-
-console.log (isMatch);
-
-// Завдання 3 ^
-// Завдання 4 v
-let a = 5;
-
-a = a + 2;
-
-console.log (a);
-
-let b = 10;
-
-b = b - 4;
-
-console.log (b);
-
-let c = 15;
-
-c = c * 3;
-
-console.log (c);
-
-let d = 20;
-
-d = d / 10;
-
-console.log (d);
-
-// Завдання 4 ^
+// Завдання 6 ^
