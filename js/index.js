@@ -1,55 +1,68 @@
-const pricePerItem = 3500;
+const k1 = "5px";
 
-const orderedQuantity = 4;
+console.log (Number.parseInt(k1));
 
-const totalPrice = pricePerItem * orderedQuantity;
+const k2 = "12djd334";
 
-console.log (totalPrice);
+console.log (Number.parseInt(k2))
+
+const k3 = "12.45asdwe12";
+
+console.log (Number.parseInt(k3));
+
+const k4 = "qwqweeewq";
+
+console.log (Number.parseInt(k4));
 
 // Завдання 1 ^
-
 // Завдання 2 v
 
-let age = 19
+const к1 = "5px";
 
-const passed = age > 18
+console.log (Number.parseFloat(к1));
 
-console.log (passed);
+const к2 = "12djd334";
 
+console.log (Number.parseFloat(к2));
+
+const к3 = "12.45asdwe12";
+
+console.log (Number.parseFloat(к3));
+
+const к4 = "qwqweeewq";
+
+console.log (Number.parseFloat(к4));
+
+// Завдання 2 ^
 // Завдання 3 v
 
-let password = 194285
+console.log (Math.max(2, 34, 99, 3, 22, 36, 733, 18));
 
-const SAVED_PASSWORD = 1924235
-
-const isMatch = SAVED_PASSWORD === password;
-
-console.log (isMatch);
+console.log (Math.min(2, 34, 99, 3, 22, 36, 733, 18));
 
 // Завдання 3 ^
 // Завдання 4 v
-let a = 5;
 
-a = a + 2;
+const a = 3;
 
-console.log (a);
-
-let b = 10;
-
-b = b - 4;
-
-console.log (b);
-
-let c = 15;
-
-c = c * 3;
-
-console.log (c);
-
-let d = 20;
-
-d = d / 10;
-
-console.log (d);
+console.log(Math.random(a) * (19 - 1) + 1);
 
 // Завдання 4 ^
+// Завдання 5 v
+
+const c = 4;
+
+console.log (Math.sqrt(c));
+
+// Завдання 5 ^
+// Завдання 6 v
+
+const string1 = "12px";
+
+console.log (Number.parseInt(string1));
+
+const number1 = 14;
+
+console.log (String(number1));
+
+// Завдання 6 ^
