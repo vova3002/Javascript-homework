@@ -1,66 +1,34 @@
-console.log (Number.parseInt(k1));
+let result = 5 + 5 + '5';
 
-const k2 = "12djd334";
-
-console.log (Number.parseInt(k2))
-
-const k3 = "12.45asdwe12";
-
-console.log (Number.parseInt(k3));
-
-const k4 = "qwqweeewq";
-
-console.log (Number.parseInt(k4));
+console.log (result);
 
 // Завдання 1 ^
 // Завдання 2 v
 
-const к1 = "5px";
+let email = '@yurkovets.volodymir@gmail.com'.length;
 
-console.log (Number.parseFloat(к1));
-
-const к2 = "12djd334";
-
-console.log (Number.parseFloat(к2));
-
-const к3 = "12.45asdwe12";
-
-console.log (Number.parseFloat(к3));
-
-const к4 = "qwqweeewq";
-
-console.log (Number.parseFloat(к4));
+console.log (email);
 
 // Завдання 2 ^
 // Завдання 3 v
 
-console.log (Math.max(2, 34, 99, 3, 22, 36, 733, 18));
+const a = "My,";
 
-console.log (Math.min(2, 34, 99, 3, 22, 36, 733, 18));
+const b = " name,";
+
+const c = " is. ";
+
+const fullName = a + b + c + "Viktor";
+
+console.log (fullName);
 
 // Завдання 3 ^
 // Завдання 4 v
 
-const a = 3;
+const userName = "Igor! ";
 
-console.log(Math.random(a) * (19 - 1) + 1);
+const payment = 300 ;
+
+alert ("Дякуємо, " + userName + "До сплати " + payment + " гривень");
 
 // Завдання 4 ^
-// Завдання 5 v
-
-const c = 4;
-
-console.log (Math.sqrt(c));
-
-// Завдання 5 ^
-// Завдання 6 v
-
-const string1 = "12px";
-
-console.log (Number.parseInt(string1));
-
-const number1 = 14;
-
-console.log (String(number1));
-
-// Завдання 6 ^
