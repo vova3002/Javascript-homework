@@ -1,34 +1,41 @@
-let result = 5 + 5 + '5';
+// Завдання 1 v
+const button = document.getElementById('button');
+console.log(button);
 
-console.log (result);
+button.textContent = 'Відправати';
 
+const input = document.getElementById('input');
+console.log(input);
+
+input.placeholder = 'Phone-Number'
 // Завдання 1 ^
 // Завдання 2 v
 
-let email = '@yurkovets.volodymir@gmail.com'.length;
+const image = document.querySelector('.image');
+console.log (image);
 
-console.log (email);
+image.src = './image/forest.webp'
 
 // Завдання 2 ^
 // Завдання 3 v
 
-const a = "My,";
+const fire = document.querySelector('.fire');
+console.log (fire);
 
-const b = " name,";
+fire.src = './image/water.jpeg'
 
-const c = " is. ";
+const link = document.querySelector('.link');
+console.log (link);
 
-const fullName = a + b + c + "Viktor";
-
-console.log (fullName);
+link.href = 'https://github.com/vova3002/Javascript-homework'
+link.target = '_blank'
 
 // Завдання 3 ^
 // Завдання 4 v
 
-const userName = "Igor! ";
+const list = document.querySelector('.list');
+console.log (list);
 
-const payment = 300 ;
-
-alert ("Дякуємо, " + userName + "До сплати " + payment + " гривень");
+list.firstElementChild.textContent = 'first-text'
 
 // Завдання 4 ^
