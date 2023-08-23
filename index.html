@@ -5,41 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/change.css">
+    <link rel="stylesheet" href="./css/change.css" />
   </head>
   <body>
     <!-- Завдання 1 v -->
-    <form action="">
-      <input placeholder="E-mail" type="text" id="input" />
-      <button type="button" id="button">Добре</button>
-    </form>
+    <button class="button" data-action="show-modal">Відкрити модалку</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          laboriosam, a nesciunt commodi quos sequi soluta voluptatum dolore
+          repellendus itaque quaerat ea. Dicta corporis nesciunt quas enim
+          tempore ullam totam. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Tempore pariatur aut quam nemo numquam velit
+          voluptatem dolor facilis dolorem expedita magnam, asperiores porro,
+          laborum saepe similique quasi modi quod cumque.
+        </p>
+        <button type="button" class="button-close" data-action="close-modal">
+          Закрити
+        </button>
+      </div>
+    </div>
     <!-- Завдання 1 ^ -->
     <!-- Завдання 2 v -->
-    <h1>Awesome art!</h1>
-    <img src="./image/burning-forest.jpeg" alt="Beautiful art" class="image"/>
+    <form>
+      <p>Choose a color:</p>
+      <label>
+        <input type="radio" name="color" value="red" checked class="red" />
+        Red
+      </label>
+      <label>
+        <input type="radio" name="color" value="white" class="white" />
+        White
+      </label>
+      <label>
+        <input type="radio" name="color" value="green" class="green" />
+        Green
+      </label>
+    </form>
     <!-- Завдання 2 ^ -->
-    <!-- Завдання 3 v -->
-    <a href="https://edu.goiteens.com/learn/16946144/15266038/15266398/homework" class="link"><img src="./image/fire.jpeg" alt="hey" class="fire"/></a>
-    <!-- Завдання 3 ^ -->
-    <!-- Завдання 4 v -->
-    <ul class="list">
-      <li>
-        <p class="text">text1</p>
-      </li>
-      <li>
-        <p class="text">text2</p>
-      </li>
-      <li>
-        <p class="text">text3</p>
-      </li>
-      <li>
-        <p class="text">text4</p>
-      </li>
-      <li>
-        <p class="text">text5</p>
-      </li>
-    </ul>
-    <!-- Завдання 4 ^ -->
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
