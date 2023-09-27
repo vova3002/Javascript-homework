@@ -1,27 +1,49 @@
-// Завдання 1 v
-let openModal = document.querySelector('.button');
 
-const jsBackdrop = document.querySelector('.backdrop');
+// Створити розмітку з двома текстовими полями та кнопкою. При натисканні на кнопку перевіряти, чи обидва поля містять значення, якщо так, то виводити повідомлення "Обидва поля заповнені", якщо ні — "Не всі поля заповнені".
 
-openModal.addEventListener('click', toggleModel)
-function toggleModel() {
-  jsBackdrop.classList.toggle('is-hidden')
+const button1 = prompt('1');
+const button2 = prompt('2');
+
+if (button1 && button2) {
+  alert('Обидва поля заповнені');
+} else {
+  alert('Не всі поля заповнені');
 }
 
-const closeModal = document.querySelector('.button-close');
+// 1 ^
+// 2 v
 
-closeModal.addEventListener('click', toggleModel);
-// Завдання 1 ^
-// Завдання 2 v
+// Створити розмітку  з двома числовими полями та кнопкою. При натисканні на кнопку перевіряти, чи сума значень полів більша за 10, якщо так, то виводити повідомлення "Сума більша за 10", якщо ні — "Сума менша або дорівнює 10".
 
-const colorRed = document.querySelector('.red');
+const amount1 = Number(prompt('Введіть ващі кошти'));
+const amount2 = Number(prompt('Введіть ващі кошти'));
 
-colorRed.addEventListener('click', () => {
-  colorRed.body.document.style.backgroundColor = 'red';
-})
+const add = amount2 + amount1;
 
-const colorWhite = document.querySelector('.white');
+if (add > 10) {
+  alert('Сума більша за 10');
+} else {
+  alert('Сума менша або дорівнює 10');
+}
 
-const colorGreen = document.querySelector('.green');
+// 2 ^
+// 3 v
 
-// Завдання 2 ^
+// Створити розмітку  з текстовим полем та кнопкою. При натисканні на кнопку перевіряти, чи введений текст містить слово "JavaScript", якщо так, то виводити повідомлення "Текст містить слово JavaScript", якщо ні — "Текст не містить слово JavaScript".
+
+// str.include("str")
+
+let text = prompt('Введіть текст JavaScript');
+
+if (text.includes("JavaScript")) {
+  alert('Текст містить слово JavaScript');
+} else {
+  alert('Tекст не містить слово JavaScript');
+}
+
+// 3 ^
+// 4 v
+
+
+
+// 4 ^
