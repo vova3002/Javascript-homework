@@ -1,41 +1,48 @@
-// Завдання 1 v
-const button = document.getElementById('button');
-console.log(button);
+// Створити розмітку з двома текстовими полями та кнопкою. При натисканні на кнопку перевіряти, чи обидва поля містять значення, якщо так, то виводити повідомлення "Обидва поля заповнені", якщо ні — "Не всі поля заповнені".
 
-button.textContent = 'Відправати';
+const button1 = prompt('1');
+const button2 = prompt('2');
 
-const input = document.getElementById('input');
-console.log(input);
+if (button1 && button2) {
+  alert('Обидва поля заповнені');
+} else {
+  alert('Не всі поля заповнені');
+}
 
-input.placeholder = 'Phone-Number'
-// Завдання 1 ^
-// Завдання 2 v
+// 1 ^
+// 2 v
 
-const image = document.querySelector('.image');
-console.log (image);
+// Створити розмітку  з двома числовими полями та кнопкою. При натисканні на кнопку перевіряти, чи сума значень полів більша за 10, якщо так, то виводити повідомлення "Сума більша за 10", якщо ні — "Сума менша або дорівнює 10".
 
-image.src = './image/forest.webp'
+const amount1 = Number(prompt('Введіть ващі кошти'));
+const amount2 = Number(prompt('Введіть ващі кошти'));
 
-// Завдання 2 ^
-// Завдання 3 v
+const add = amount2 + amount1;
 
-const fire = document.querySelector('.fire');
-console.log (fire);
+if (add > 10) {
+  alert('Сума більша за 10');
+} else {
+  alert('Сума менша або дорівнює 10');
+}
 
-fire.src = './image/water.jpeg'
+// 2 ^
+// 3 v
 
-const link = document.querySelector('.link');
-console.log (link);
+// Створити розмітку  з текстовим полем та кнопкою. При натисканні на кнопку перевіряти, чи введений текст містить слово "JavaScript", якщо так, то виводити повідомлення "Текст містить слово JavaScript", якщо ні — "Текст не містить слово JavaScript".
 
-link.href = 'https://github.com/vova3002/Javascript-homework'
-link.target = '_blank'
+// str.include("str")
 
-// Завдання 3 ^
-// Завдання 4 v
+let text = prompt('Введіть текст JavaScript');
 
-const list = document.querySelector('.list');
-console.log (list);
+if (text.includes("JavaScript")) {
+  alert('Текст містить слово JavaScript');
+} else {
+  alert('Tекст не містить слово JavaScript');
+}
 
-list.firstElementChild.textContent = 'first-text'
+// 3 ^
+// 4 v
 
-// Завдання 4 ^
+
+
+// 4 ^
