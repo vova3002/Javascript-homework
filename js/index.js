@@ -1,70 +1,181 @@
+// Створити розмітку з формою, що містить список (select) з трьома варіантами вибору: "Кава", "Чай" та "Сік". При виборі кожного варіанту виводити відповідне повідомлення в блок на сторінці.
 
-// Створити розмітку з двома текстовими полями та кнопкою. При натисканні на кнопку перевіряти, чи обидва поля містять значення, якщо так, то виводити повідомлення "Обидва поля заповнені", якщо ні — "Не всі поля заповнені".
+const drink = prompt("Кава, Чай та Сік")
 
-const button1 = prompt('1');
-const button2 = prompt('2');
-
-if (button1 && button2) {
-  alert('Обидва поля заповнені');
-} else {
-  alert('Не всі поля заповнені');
+switch (drink) {
+  case "Кава" :
+    console.log("Ви вибрали Каву")
+  break;
+  case "Сік" :
+    console.log("Ви вибрали Сік")
+  break;
+  case "Чай" :
+    console.log("Ви вибрали Чай");
+  default:
+    console.log("Ви вибрали щось інше")
+    break;
 }
-
 // 1 ^
 // 2 v
 
-// Створити розмітку  з двома числовими полями та кнопкою. При натисканні на кнопку перевіряти, чи сума значень полів більша за 10, якщо так, то виводити повідомлення "Сума більша за 10", якщо ні — "Сума менша або дорівнює 10".
+const day = prompt("Ведіть день тижня")
 
-const amount1 = Number(prompt('Введіть ващі кошти'));
-const amount2 = Number(prompt('Введіть ващі кошти'));
-
-const add = amount2 + amount1;
-
-if (add > 10) {
-  alert('Сума більша за 10');
-} else {
-  alert('Сума менша або дорівнює 10');
+switch(day) {
+  case "Понеділок" :
+    console.log(`${day} Це є будний день`)
+  break
+  case "Вівторок" :
+    console.log(`${day} Це є будний день`)
+  break
+  case "Середа" :
+    console.log(`${day} Це є будний день`)
+  break
+  case "Четверг" :
+    console.log(`${day} Це є будний день`)
+  break
+  case "П'ятниця" :
+    console.log(`${day} Це є будний/вихідний день`)
+  break
+  case "Субота" :
+    console.log(`${day} Це є вихідний день`)
+  break
+  case "Неділя" :
+    console.log(`${day} Це є вихідний день`)
+  break
+  default:
+    console.log('Такого дня не існує.')
 }
 
 // 2 ^
 // 3 v
 
-// Створити розмітку  з текстовим полем та кнопкою. При натисканні на кнопку перевіряти, чи введений текст містить слово "JavaScript", якщо так, то виводити повідомлення "Текст містить слово JavaScript", якщо ні — "Текст не містить слово JavaScript".
+const numberMonths = prompt('Ведіть номер місяця')
 
-// str.include("str")
-
-let text = prompt('Введіть текст JavaScript');
-
-if (text.includes("JavaScript")) {
-  alert('Текст містить слово JavaScript');
-} else {
-  alert('Tекст не містить слово JavaScript');
+switch(numberMonths) {
+  case "1" :
+    console.log('зима')
+  break
+  case "2" :
+    console.log('зима')
+  break
+  case "3" :
+    console.log('це весна')
+  break
+  case "4" :
+    console.log('це весна')
+  break
+  case "5" :
+    console.log('це весна')
+  break
+  case "6" :
+    console.log('це літо')
+  break
+  case "7" :
+    console.log('це літо')
+  break
+  case "8" :
+    console.log('це літо')
+  break
+  case "9" :
+    console.log('це осінь')
+  break
+  case "10" :
+    console.log('це осінь')
+  break
+  case "11" :
+    console.log('це осінь')
+  break
+  case "12" :
+    console.log('це зима')
+  break
+  default:
+    console.log('Такого номера місяця немає')
+  break
 }
 
 // 3 ^
 // 4 v
-// творити розмітку  з формою з полями введення та кнопкою. При натисканні на кнопку перевіряти, чи введене число більше за 10 та менше за 20, якщо так, то виводити повідомлення "Число входить в діапазон від 10 до 20", якщо ні — "Число не входить в діапазон від 10 до 20".
 
-const form = Number(prompt('Введіть число від 10 - 20'));
+const daysMonths = prompt('Ведіть номер місяця дізнатися яку кількість днів вони мають.')
 
-if (form > 9 && form < 21) {
-  alert('Число входить в діапазон від 10 до 20')
-} else {
-  alert('Число не входить в діапазон від 10 до 20')
+switch(daysMonths) {
+  case "1" :
+    console.log('січень має 31 день')
+  break
+  case "2" :
+    console.log('лютий має 28-29 днів')
+  break
+  case "3" :
+    console.log('березень має 31 день')
+  break
+  case "4" :
+    console.log('квітень має 30 днів')
+  break
+  case "5" :
+    console.log('травень має 31 днів')
+  break
+  case "6" :
+    console.log('червень має 30 днів')
+  break
+  case "7" :
+    console.log('липень має 31 день')
+  break
+  case "8" :
+    console.log('серпень має 31 день')
+  break
+  case "9" :
+    console.log('вересень має 30 день')
+  break
+  case "10" :
+    console.log('Жовтень має 31 день')
+  break
+  case "11" :
+    console.log('листопад має 30 днів')
+  break
+  case "12" :
+    console.log('грудень 31 день')
+  break
+  default:
+    console.log('Такого номера місяця немає')
+  break
 }
 
 // 4 ^
 // 5 v
-// Створити розмітку  з формою з полями введення та кнопкою. При натисканні на кнопку перевіряти, чи введені дані правильно заповнені, якщо так, то перенаправляти на іншу сторінку, якщо ні — виводити повідомлення про помилку. Правильно заповнені дані: ім'я містить не менше 3 символів, email містить символ @ та крапку після неї, пароль містить не менше 6 символів.
 
-const email = prompt("Введіть вашу електрону почту.")
-const passWord = prompt("Введіть ваш пароль довжен містить 6 символів.")
-const names = prompt("Введіть ваше ім'я має містити 3 символів.")
+const color = prompt('Ведіть кольор')
 
-if (email.includes("@") && email.includes(".") && passWord.length > 6 && names.length > 3) {
-  
-} else {
-  alert('Ви вели неправильний пароль, електрону почту чи імʼя.')
+switch(color) {
+  case "red" :
+    console.log('Стоп')
+  break
+  case "yellow" :
+    console.log('Чекати')
+  break
+  case 'green' :
+    console.log('Йти')
 }
 
 // 5 ^
+// 6 v
+
+const symbol = prompt('Ведіть якийсь знак (Буть те обережні ділити якесь число на нуль)')
+const number = Number(prompt('Ведіть якийсь номер (Буть те обережні ділити якесь число на нуль)'))
+const number2 = Number(prompt('Ведіть якийсь номер (Буть те обережні ділити якесь число на нуль'))
+
+switch(symbol) {
+  case '/' :
+    console.log(number / number2)
+  break
+  case '-' :
+    console.log(number - number2)
+  break
+  case '+' :
+    console.log(number + number2)
+  break
+  case '*' :
+    console.log(number * number2)
+  break
+}
+
+// 6 ^
