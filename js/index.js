@@ -57,12 +57,14 @@ for (let f = 1; f <= n; f += 1) {
 // 6 ^
 // 7 v
 
-for (let g = 1; g <= 20; g += 1) {
-  if (g === 3) {
-    break;
+const number = 20;
+
+for (let h = 0; h < number; h += 1) {
+  if (h % 2 ===0) {
+    continue;
   } else {
-    console.log(g)
+    console.log(h)
   }
 }
 
-// 7 ^
+// 7 
