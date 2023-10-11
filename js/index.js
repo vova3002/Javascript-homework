@@ -44,10 +44,10 @@ for (let c = 1; c <= 10; c += 1) {
 // 5 ^
 // 6 v
 
-let e = prompt('Введіть число');
+let n = prompt('Введіть число');
 
-for (let f = 1; f <= e; f += 1) {
-  if (f === e) {
+for (let f = 1; f <= n; f += 1) {
+  if (f === n) {
     break;
   } else {
     console.log(f);
