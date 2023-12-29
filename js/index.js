@@ -1,76 +1,73 @@
-// // Напиши функцію logItems(array), яка отримує масив і використовує цикл for, який для кожного елемента масиву буде виводити в консоль повідомлення в форматі [номер елемента] - [значення елемента].
-// const logItems = [100, 200, 300, 400, 500];
-// for(let i = 0; i < logItems.length; i += 1) {
-//   console.log(`${i} ${logItems[i]}`);
-// };
+// const buttonJS = document.querySelector("button")
+// buttonJS.addEventListener("click", () => {
+//   alert("Hello World!")
+// } );
 
 // 1 ^
 // 2 v
-// Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
-// function calculateEngravingPrice(message, pricePerWord) {
-//   const array = message.split(" ")
-//   let quantityWords = array.length
-//   const totalPrice = quantityWords * pricePerWord
-//   console.log(totalPrice)
-// };
-// calculateEngravingPrice('Hello vova', 100)
-// 2 ^
-// 3 v
 
-// function findLongestWord(string) {
-// const arrayWords = string.split(' ')
-// let longestWord = arrayWords[0]
-// for(let i = 0; i < arrayWords.length; i += 1) {
-//   arrayWords[i].length
-//   if(longestWord.length < arrayWords[i].length) {
-//     longestWord = arrayWords[i]
+// const input = document.querySelector("input");
+// const text = docuemnt.querySelector(".text1");
+// const textEnd = document.querySelector(".text2");
+// const button = document.querySelector("button");
+
+// const guessTheNumber = Number(prompt("Вгадайте число від 1 - 100"));
+
+// const guessNum = function(guesser) {
+//   let generatedNumbers = Math.random() * (100 - 1) + 1
+//   generatedNumbers = Math.round(generatedNumbers)
+//   if(guesser === generatedNumbers) {
+//     alert("Ви вгадали число!")
+//   }
+//   else {
+//     alert("Ви не вгадали число.")
 //   }
 // }
-// return longestWord
-// }
-// console.log(findLongestWord("This is the greatest message ever"))
-// console.log(findLongestWord("Vova is learning javascript"))
+// guessNum(guessTheNumber)
+
+// 2 ^
+// 3 v
+// let counter = 0;
+
+// const buttonCheck = document.querySelector('.button3')
+// buttonCheck.addEventListener('click',()=> {
+//    counter += 1;
+// })
+// console.log(counter);
 
 // 3 ^
 // 4 v
 
-// function formatString(string) {
-//   const stringLength = string.length
-//   if (stringLength < 40) {
-//     return string
-//   } else {
-//     console.log(string.slice(0, 40))
-//   }
+// const applyCallbackToEachElement = (arr, callback) => {
+//   const resultForeach = []
+//   arr.forEach(element => resultForeach.push(callback(element)))
+//   const resultMap = arr.map(element => callback(element))
+
+//   console.log('resultForeach', resultForeach)
+//   console.log('resultMap', resultMap)
+
+//   return arr.foreach(element => callback(element))
 // }
-// formatString('Learning javascript so I can make websites on google');
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const squareCallback = (elem) => elem * elem
+
+// const result = applyCallbackToEachElement(arr, squareCallback);
+// console.log(result)
 
 // 4 ^
 // 5 v
+// const calculateDiscountPrice = (price, discount, callback) => {
+//   const discounter = price - price * (discount / 100)
+//   callback(discounter)
+// }
 
-// function checkForSpam(message) {
-// const messageCheck = message.split(' ')
-// if(messageCheck.includes("spam" || "sale")) {
-//   alert("There's a forbidden message on your text")
-// } else {
-//   alert("There's no forbidden message on your text")
+// let showDiscountPrice = (discountPrice) => {
+//   console.log(`Discounted price: ${discountPrice}`)
 // }
-// }
-// checkForSpam("School is always spamming too much homework")
+
+// calculateDiscountPrice(100, 10, showDiscountPrice);
+
 
 // 5 ^
-// 6 v
-
-function sendNumber() {
-  const askArray = []
-  let askNumber
-  do{
-    askNumber = prompt("Введіть число")
-    askArray.push(askNumber)
-  } while(askNumber !== null)
-  return askArray
-}
-console.log(sendNumber())
-// 6 ^
-// 7 v
-
-// 7 ^
