@@ -145,6 +145,6 @@ const allProdcutsArray = [
   }
 ]
 calculateTotalPrice(allProdcutsArray, "apple")
-console.log(calculateTotalPrice(allProdcutsArray(total)))
+console.log(calculateTotalPrice(total))
 
 // 6 ^
