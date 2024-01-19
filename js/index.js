@@ -116,35 +116,53 @@
 // 5 ^
 // 6 v
 // Напиши функцію calculateTotalPrice(allProdcuts, productName), яка отримує масив об'єктів та ім'я продукту (значення властивості name). Повертає загальну вартість продукту (ціна * кількість).
-let total = 0;
-const calculateTotalPrice = (allProdcuts, productName) => {
-  for (let i = 0; i < allProdcuts.length; i += 1) {
-    if(allProdcuts[i].productName === productName) {
-     total = allProdcuts[i].price + total
-    }
+// let total = 0;
+// const calculateTotalPrice = (allProdcuts, productName) => {
+//   for (let i = 0; i < allProdcuts.length; i += 1) {
+//     if(allProdcuts[i].productName === productName) {
+//      total = allProdcuts[i].price + total
+//     }
+//   }
+//   return total
+// }
+
+// const allProdcutsArray = [
+//   {
+//     productName: "apple", 
+//     price: 28
+//   },
+//   {
+//     productName: "bread",
+//     price: 34
+//   },
+//   {
+//     productName: "meat",
+//     price: 45
+//   },
+//   {
+//     productName: "apple",
+//     price: 32
+//   }
+// ]
+// calculateTotalPrice(allProdcutsArray, "apple")
+// console.log(calculateTotalPrice(total))
+
+// // 6 ^
+// // 7 v
+
+const account = {
+  balance: 20000,
+  historyOfTransitions: [{ amount: 100 }, { amount: 1200 }, { amount: 900 }, { amount: 400 }],
+  calcHistoryAmount: function () {
+    return this.historyOfTransitions.reduce((acc, next) => {
+      return  acc + next.amount
+    }, 0)
+  },
+  checkBalance: function() {
+    return this.balance - this.calcHistoryAmount()
   }
-  return total
 }
 
-const allProdcutsArray = [
-  {
-    productName: "apple", 
-    price: 28
-  },
-  {
-    productName: "bread",
-    price: 34
-  },
-  {
-    productName: "meat",
-    price: 45
-  },
-  {
-    productName: "apple",
-    price: 32
-  }
-]
-calculateTotalPrice(allProdcutsArray, "apple")
-console.log(calculateTotalPrice(total))
-
-// 6 ^
+const check = account.checkBalance()
+console.log('check', check)
+// 7 ^
