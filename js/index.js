@@ -11,7 +11,7 @@
 // const keys = Object.keys(user)
 
 // for (const key of keys) {
-//   alert(`${key}: ${keys}`)
+//   alert(`${key}: ${user[key]}`)
 // };
 
 // console.log(keys)
@@ -20,10 +20,7 @@
 // 2
 // Напиши функцію countProps(obj), яка рахує кількість властивостей в об'єкті. Функція повертає число — кількість властивостей.
 
-// const countProps = (obj) => {
-// const arrayTurner = Object.keys(obj)
-// return arrayTurner.length
-// }
+// const countProps = (obj) => Object.keys(obj).length
 
 // const object = {
 //   day: "bright",
@@ -31,24 +28,20 @@
 //   working: true
 // }
 
-// countProps(object)
 // console.log(countProps(object))
-
-// console.log(array)
 // 2
 // 3 v
 // Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я найпродуктивнішого (який виконав більше всіх задач). Співробітники і кількість виконаних завдань містяться як властивості об'єкта в форматі "ім'я":"кількість задач".
 
-// const findBestEmployee = (employees) => {
-//   const converter = Object.values(employees)
-//   let bestEmployeer = 0
-//   converter.forEach((employeer) => {
-//     if(employeer > bestEmployeer) {
-//       bestEmployeer = employeer
+// const findBestEmployee = ({ danya, vova, michael }) => {
+//   let bestEmployee = 0;
+//   [danya, vova, michael].forEach(workers => {
+//     if (workers > bestEmployee) {
+//       bestEmployee = workers
 //     }
-//     return bestEmployeer
 //   })
-//   return bestEmployeer
+
+//   return bestEmployee;
 // }
 
 // const workerList = {
@@ -57,7 +50,6 @@
 //   michael: 7
 // }
 
-// findBestEmployee(workerList)
 // console.log(findBestEmployee(workerList))
 
 // 3 ^
@@ -78,6 +70,10 @@
 //   worker2: 4000,
 //   worker3: 7000
 // }
+// // console.log(salaryList.worker1, salaryList.worker2, salaryList.worker3)
+
+// // Деструктурізація v
+// const {worker1, worker2, worker3} = salaryList
 
 // countTotalSalary(salaryList)
 // console.log(countTotalSalary(salaryList))
@@ -110,6 +106,9 @@
 //     price: 40
 //   }
 // ]
+
+// const [{fruitName, price}] = fruitsArray
+// console.log(fruitName, price)
 
 // getAllPropValues(fruitsArray, "Apple")
 
@@ -144,6 +143,10 @@
 //     price: 32
 //   }
 // ]
+
+// const [{productName, price}] = allProdcutsArray
+// console.log(productName, price)
+
 // calculateTotalPrice(allProdcutsArray, "apple")
 // console.log(calculateTotalPrice(total))
 
@@ -162,6 +165,9 @@ const account = {
     return this.balance - this.calcHistoryAmount()
   }
 }
+
+const {balance, historyOfTransitions} = account
+console.log(balance, historyOfTransitions)
 
 const check = account.checkBalance()
 console.log('check', check)
