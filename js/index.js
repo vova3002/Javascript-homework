@@ -70,6 +70,28 @@
 // console.log(userGender)
 
 // 3 ^
+// Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я найпродуктивнішого (який виконав більше всіх задач). Співробітники і кількість виконаних завдань містяться як властивості об'єкта в форматі "ім'я":"кількість задач".
+
+// const findBestEmployee = ({ danya, vova, michael }) => {
+//   let bestEmployee = 0;
+//   [danya, vova, michael].forEach(workers => {
+//     if (workers > bestEmployee) {
+//       bestEmployee = workers
+//     }
+//   })
+
+//   return bestEmployee;
+// }
+
+// const workerList = {
+//   danya: 5,
+//   vova: 2,
+//   michael: 7
+// }
+
+// console.log(findBestEmployee(workerList))
+
+// 3 ^
 // 4 v
 
 // const userActive = [
