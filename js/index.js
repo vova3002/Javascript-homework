@@ -1,186 +1,102 @@
-// const users = [
+// const names = [
 //   {
 //     name: "vova",
-//     age: 14
+//     balance: 50000,
 //   },
 //   {
-//     name: 'misha',
-//     age: 15
+//     name: "misha",
+//     balance: 200000,
 //   },
 //   {
-//     name: 'danya',
-//     age: 14
+//     name: "danya",
+//     balance: 10000,
+//   },
+//   {
+//     name: "timur",
+//     balance: 9000,
 //   }
 // ]
 
-// const userCheck = users.map(user => user.name)
+// const searcher = names.reduce((acc, collectionNames) => {
+//   acc += collectionNames.balance
+//   console.log(collectionNames)
+//   return acc
+// }, 0)
+// console.log(searcher)
 
-// console.log(userCheck)
-// 1 ^
-// 2 V
-// Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
-
-// const userEyeColors = [
+// const nameObj = [
 //   {
 //     name: "vova",
-//     age: 14,
-//     eyeColor: "Blue"
+//     friend: "misha",
 //   },
 //   {
-//     name: 'misha',
-//     age: 15,
-//     eyeColor: "Brown"
+//     name: "misha",
+//     friend: "vova",
 //   },
 //   {
-//     name: 'danya',
-//     age: 14,
-//     eyeColor: "Blue"
+//     name: "danya",
+//     friend: "misha",
+//   },
+//   {
+//     name: "timur",
+//     friend: "pasha",
 //   }
 // ]
 
-// const userCheckEyeColors = userEyeColors.filter(eyeColorFinder => eyeColorFinder.eyeColor === "Blue")
+// const combFriends = nameObj.reduce((acc, user) => {
+//   if(user.friend === "misha") {
+//     acc.push(user)
+//   }
+//   return acc
+// }, [])
 
-// console.log(userCheckEyeColors)
+// console.log(combFriends)
 
-// 3 v
-
-// const userChecking = [
+// const nameObj = [
 //   {
 //     name: "vova",
-//     age: 14,
-//     eyeColor: "Blue",
-//     gender: "Male"
+//     friends: 8,
 //   },
 //   {
-//     name: 'dasha',
-//     age: 15,
-//     eyeColor: "Brown",
-//     gender: "Female"
+//     name: "misha",
+//     friends: 5,
 //   },
 //   {
-//     name: 'danya',
-//     age: 14,
-//     eyeColor: "Blue",
-//     gender: "Male"
+//     name: "danya",
+//     friends: 10,
+//   },
+//   {
+//     name: "timur",
+//     friends: 2,
 //   }
 // ]
 
-// const userGender = userChecking.filter(userGenderFinder => userGenderFinder.gender === "Male")
-
-// console.log(userGender)
-
-// 3 ^
-// Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я найпродуктивнішого (який виконав більше всіх задач). Співробітники і кількість виконаних завдань містяться як властивості об'єкта в форматі "ім'я":"кількість задач".
-
-// const findBestEmployee = ({ danya, vova, michael }) => {
-//   let bestEmployee = 0;
-//   [danya, vova, michael].forEach(workers => {
-//     if (workers > bestEmployee) {
-//       bestEmployee = workers
-//     }
-//   })
-
-//   return bestEmployee;
-// }
-
-// const workerList = {
-//   danya: 5,
-//   vova: 2,
-//   michael: 7
-// }
-
-// console.log(findBestEmployee(workerList))
-
-// 3 ^
+// const sortFriends = nameObj.sort((user, friendSort) => {
+//   return user.friends - friendSort.friends
+// })
+// console.log(sortFriends)
 // 4 v
 
-// const userActive = [
-//   {
-//     name: "vova",
-//     age: 14,
-//     eyeColor: "Blue",
-//     gender: "Male",
-//     isActive: "No"
-//   },
-//   {
-//     name: 'dasha',
-//     age: 15,
-//     eyeColor: "Brown",
-//     gender: "Female",
-//     isActive: "Yes"
-//   },
-//   {
-//     name: 'danya',
-//     age: 14,
-//     eyeColor: "Blue",
-//     gender: "Male",
-//     isActive: "Yes"
-//   }
-// ]
-
-// const userUnActiveCheck = userActive.filter(userActives => userActives.isActive === "No")
-// console.log(userUnActiveCheck)
-
-// 4 ^
-// 5 v
-
-// const userEmail = [
-//   {
-//     name: "vova",
-//     age: 14,
-//     eyeColor: "Blue",
-//     gender: "Male",
-//     isActive: "No",
-//     email: "ksaew3.email.com"
-//   },
-//   {
-//     name: 'dasha',
-//     age: 15,
-//     eyeColor: "Brown",
-//     gender: "Female",
-//     isActive: "Yes",
-//   },
-//   {
-//     name: 'danya',
-//     age: 14,
-//     eyeColor: "Blue",
-//     gender: "Male",
-//     isActive: "Yes",
-//   }
-// ]
-
-// const checkEmail = userEmail.find(userCheckEmail => userCheckEmail.email === "ksaew3.email.com")
-// console.log(checkEmail)
-
-// 5 ^
-// 6 v
-
-const userAge = [
+const nameSkiller = [
   {
     name: "vova",
-    age: 14,
-    eyeColor: "Blue",
-    gender: "Male",
-    isActive: "No",
-    email: "ksaew3.email.com"
+    skills: "gamer"
   },
   {
-    name: 'dasha',
-    age: 15,
-    eyeColor: "Brown",
-    gender: "Female",
-    isActive: "Yes",
+    name: "misha",
+    skills: "gamer"
   },
   {
-    name: 'danya',
-    age: 17,
-    eyeColor: "Blue",
-    gender: "Male",
-    isActive: "Yes",
+    name: "danya",
+    skills: "coder"
+  },
+  {
+    name: "timur",
+    skills: "editor"
   }
 ]
 
-const ageScale = userAge.filter(ageVerification => ageVerification.age > 13)
-console.log(ageScale)
-
-// 6 ^
+const sortSkills = nameSkiller.sort((user, skillPro) => {
+  return user.skills - skillPro.skills
+})
+console.log(sortSkills)
