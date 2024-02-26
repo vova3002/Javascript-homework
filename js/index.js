@@ -1,208 +1,108 @@
-// class Account {
-//   constructor(objectLog){
-//     this.login = objectLog.login;
-//     this.email = objectLog.email;
-//   }
+// const categories = document.querySelectorAll("ul")
+// const item = document.querySelectorAll("#animals.li")
+// console.log(`У списку ${categories.length} категорії.`)
+
+// const categoriesTitle = ['Тварини', 'Продукти', 'Технологія']
+// categories.forEach((category, index) => {
+//   console.log(`Категорія: ${categoriesTitle[index]}`)
+//   console.log(`Кількість елементів: ${category.getElementsByTagName('li').length}`)
+// })
+
+// const creatureTitle = document.createElement("h2")
+// const productTitle = document.createElement("h2")
+// const technicTitle = document.createElement("h2")
+
+// for(const i = 0; i < item.length; i += 1) {
+//   const a = item + i
+//   console.log(a)
 // }
+// 1 ^
+// 2 v
 
-// // console.log(Account.prototype.getInfo); // function
+// const products = document.querySelector("ul")
 
-// const mango = new Account({
-//  login: 'Mangozedog',
-//  email: 'mango@dog.woof',
-// });
+// const ingredients = [
+//   'Картопля',
+//   'Гриби',
+//   'Часник',
+//   'Помідори',
+//   'Зелень',
+//   'Приправи',
+//  ];
 
-// // mango.getInfo(); // Login: Mangozedog, Email: mango@dog.woof
+// const product1 = document.createElement("li");
+// product1.textContent = `${ingredients[0]}`
+// products.append(product1)
 
-// const poly = new Account({
-//  login: 'Poly',
-//  email: 'poly@mail.com',
-// });
+// const product2 = document.createElement("li");
+// product2.textContent = `${ingredients[1]}`
+// products.append(product2)
 
-// // poly.getInfo(); // Login: Poly, Email: poly@mail.com
-// console.log(mango)
-// console.log(poly)
-// 1
+// const product3 = document.createElement("li");
+// product3.textContent = `${ingredients[2]}`
+// products.append(product3)
 
-// 2 
+// const product4 = document.createElement("li");
+// product4.textContent = `${ingredients[3]}`
+// products.append(product4)
 
-// class User {
-//   constructor(object){
-//     this.name = object.name;
-//     this.age = object.age;
-//     this.followers = object.followers;
+// const product5 = document.createElement("li");
+// product5.textContent = `${ingredients[4]}`
+// products.append(product5)
+
+// const product6 = document.createElement("li");
+// product6.textContent = `${ingredients[5]}`
+// products.append(product6)
+
+// 2 ^
+// 3 v
+
+// const gallery = document.querySelector("#gallery")
+
+// const images = [
+//   {
+//    url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+//    alt: 'White and Black Long Fur Cat',
+//   },
+//   {
+//    url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+//    alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+//   },
+//   {
+//    url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+//    alt: 'Group of Horses Running',
 //   }
-// }
+//  ];
 
-// const mango = new User({
-//   name: 'Mango',
-//   age: 2,
-//   followers: 20,
-//  });
- 
-// //  mango.getInfo(); // User Mango is 2 years old and has 20 followers
- 
-//  const poly = new User({
-//   name: 'Poly',
-//   age: 3,
-//   followers: 17,
-//  });
- 
-// //  poly.getInfo(); // User Poly is 3 years old and has 17 followers
-// console.log(mango)
-// console.log(poly)
+//  images.forEach(({ url, alt }) => {
+//   const img = document.createElement("img")
+//   img.src = url
+//   img.alt = alt
+//   const item = document.createElement('li')
+//   item.classList.add('image_item')
+//   item.appendChild(img)
+//   gallery.appendChild(item)
+//  })
 
-// 3
+// 4 v
 
-// class Storage {
-//   constructor(ObjectStorage){
-//     this.storage = ObjectStorage;
-//   }
-// }
+// Лічильник складається зі спана і кнопок, які повинні збільшувати і зменшувати значення лічильника на 1.
+// Створи змінну counterValue в якій буде зберігається поточне значення лічильника.
+// Створи функції increment і decrement для збільшення і зменшення значення лічильника.
+// Додай слухачі кліків на кнопки, виклики функцій та оновлення інтерфейсу
 
-// const storage = new Storage([
-//   'Нанітоіди',
-//   'Пролонгер',
-//   'Залізні жупи',
-//   'Антигравітатор',
-//  ]);
- 
-//  const items = storage.getItems();
-//  console.table(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
- 
-//  storage.addItem('Дроїд');
-//  console.table(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
- 
-//  storage.removeItem('Пролонгер');
-//  console.table(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
-// console.log(storage)
+// let counterValue = 0
+// const increment = document.querySelector("#increment")
+// const decrement = document.querySelector("#decrement")
+// const counter = document.getElementById('value')
 
-// 4
 
-// class StringBuilder{
-//   constructor(ObjectBuilder) {
-//     this.worker = ObjectBuilder
-//   }
-// }
+// increment.addEventListener("click", (e) => {
+//   counterValue += 1
+//   counter.textContent = counterValue
+// })
 
-// const builder = new StringBuilder('.');
-
-// builder.append('^');
-// console.log(builder.value); // '.^'
-
-// builder.prepend('^');
-// console.log(builder.value); // '^.^'
-
-// builder.pad('=');
-// console.log(builder.value); // '=^.^='
-// console.log(builder)
-
-class Car {
-  static getSpecs(car){
-    console.log(car.maxSpeed, car.speed, car.isOn, car.distance, car.price)
-  }
-  /*
-   * Додай статичний метод `getSpecs(car)`,
-   * який приймає об'єкт-машину як параметр і виводить
-   * в консоль значення властивостей maxSpeed, speed, isOn, distance и price.
-   */
- 
-  /*
-   * Конструктор отримує об'єкт налаштувань.
-   *
-   * Додай властивості майбутнього екземпляра класу:
-   * speed - поточна швидкість, початкова 0
-   * price - ціна автомобіля
-   * maxSpeed - максимальна швидкість
-   * isOn - заведений автомобіль, значення true або false. Спочатку false
-   * distance - загальний кілометраж, спочатку 0
-   */
-  constructor(carSpeed, carPrice, carMaxSpeed, carIsOn, carDistance) {
-    this.speed = carSpeed;
-    this.price = carPrice;
-    this.maxSpeed = carMaxSpeed;
-    this.IsOn = carIsOn;
-    this.distance = carDistance;
-  }
- 
-  /*
-   * Додай геттер і сеттер для властивості price,
-   * який буде працювати з властивістю ціни автомобіля.
-   */
-   get priceCheck() {
-    return this.price
-  }
-
-  set priceCheck(carPrice){
-    this.price = carPrice
-  }
- 
-  /*
-   * Додай код для того, щоб завести автомобіль
-   * Записує у властивість isOn значення true
-   */
-  turnOn() {
-    this.IsOn = true
-  }
- 
-  /*
-   * Додай код для того, щоб заглушити автомобіль
-   * Записує у властивість isOn значення false,
-   * і скидає поточну швидкість в 0
-   */
-  turnOff() {
-    this.IsOn = false
-    this.speed = 0
-  }
- 
-  /*
-   * Додає до властивості speed отримане значення,
-   * за умови, що результуюча швидкість
-   * не більше, ніж значення властивості maxSpeed
-   */
-  accelerate(value) {
-    if(this.speed + value <= this.maxSpeed) {
-      this.speed += value
-    }
-  }
- 
-  /*
-   * Забирає від властивості speed отримане значення,
-   * за умови, що результуюча швидкість не менше нуля
-   */
-  decelerate(value) {
-    if(this.speed - value >= 0) {
-      this.speed -= value
-    }
-  }
- 
-  /*
-   * Додає в поле distance кілометраж (hours * speed),
-   * але тільки в тому випадку, якщо машина заведена!
-   */
-  drive(hours) {
-    if(this.turnOn){
-      this.distance = this.speed * hours
-    }
-  }
- }
- 
- const mustang = new Car({price: 2000,speed: 50 ,maxSpeed: 200, distance: 50 });
- 
- mustang.turnOn();
- mustang.accelerate(50);
- mustang.drive(2);
- 
- Car.getSpecs(mustang);
- // maxSpeed: 200, speed: 50, isOn: true, distance: 100, price: 2000
- 
- mustang.decelerate(20);
- mustang.drive(1);
- mustang.turnOff();
- 
- Car.getSpecs(mustang);
- // maxSpeed: 200, speed: 0, isOn: false, distance: 130, price: 2000
- 
- console.log(mustang.price); // 2000
- mustang.price = 4000;
- console.log(mustang.price); // 4000
+// decrement.addEventListener("click", (e) => {
+//   counterValue -= 1
+//   counter.textContent = counterValue
+// })
