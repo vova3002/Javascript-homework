@@ -1,67 +1,19 @@
-const openMenuBtn = document.getElementById('open-modal')
-const closeMenuBtn = document.getElementById('close-modal')
-const backdropModal = document.querySelector('.js-backdrop')
-const body = document.querySelector('body')
-
-
-openMenuBtn.addEventListener("click", (event) => {
-  body.classList.add("show-modal");
-})
-closeMenuBtn.addEventListener("click", (event) => {
-  body.classList.remove("show-modal")
-})
-
-backdropModal.addEventListener("click", (event) => {
-  body.classList.remove("show-modal")
-  console.log(backdropModal)
-})
-// 1 ^
-// 2 v
-
-// const redColor = document.getElementById('red')
-// const whiteColor = document.getElementById('white')
-// const greenColor = document.getElementById('green')
-// const formColor = document.getElementById('form')
-
-// redColor.addEventListener('focus', (e) => {
-// formColor.style.backgroundColor = "red"
-// })
-// whiteColor.addEventListener('focus', (e) => {
-// formColor.style.backgroundColor = "white"
-// })
-// greenColor.addEventListener('focus', (e) => {
-// formColor.style.backgroundColor = "green"
-// })
-
-// 2 ^
-// 3 v
-
-// const text = document.getElementById('name-output')
-// const nameInputer = document.getElementById('name-input')
-
-// nameInputer.addEventListener('input', (e) => {
-//   text.textContent = (nameInputer.value)
-// })
-
-// 4 v
-// const input = document.getElementById("validation-input")
-
-// input.addEventListener('input', (e) => {
-//   if(input.value.length < input.getAttribute("data-length")) {
-//     input.classList = ('valid')
-//     console.log(input)
-//   } else {
-//     input.classList = ('invalid')
-//     console.log(input)
+// const gallery = document.querySelector('.gallery')
+// document.body.addEventListener("keydown", (e) => {
+//   if(e.key === 'ArrowLeft'){
+//     gallery.scrollLeft += 5
+//   } else if(e.key === 'ArrowRight'){
+//     gallery.scrollLeft -= 5
 //   }
 // })
+const boxes = document.getElementById("boxes")
+const createBoxesAmount = (amount) => {
+for(let i = 0; i < amount; i++){
+  boxes.innerHTML += `<div style="width:${30 + i * 10}px; height:${30 + i * 10}px; background-color:rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}"></div>`
+}
+}
 
-// 5 v
-
-// const fontSize = document.getElementById("font-size-control");
-// const textMagic = document.getElementById("text");
-
-// fontSize.addEventListener("input", (e) => {
-//   textMagic.style.fontSize = fontSize.value + "px"
-//   console.log(textMagic)
-// })
+const destroyBoxes = () => {
+boxes.innerHTML = ""
+}
+const numberInput = document.querySelector(`#controls > input[type="number"]`)
