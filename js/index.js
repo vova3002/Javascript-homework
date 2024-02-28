@@ -1,3 +1,4 @@
+
 const openMenuBtn = document.getElementById('open-modal')
 const closeMenuBtn = document.getElementById('close-modal')
 const backdropModal = document.querySelector('.js-backdrop')
